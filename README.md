@@ -8,7 +8,7 @@ Sten Reins
 ## Funktsioonid
 
 Rakendus võimaldab kasutajal:
-1. vahetada ajatsooni (hetkel valikus viis tükki)
+1. vahetada ajatsooni ning näha seal olevat ilma (hetkel valikus viis ajatsooni)
 1. muuta fonti, selle suurust ja värvi
 1. muuta kella taustavärvi
 1. vahetada taustapilti
