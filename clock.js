@@ -1,4 +1,6 @@
-/*Create a HTML digital clock, which is able to display the current time, current date (day of the week, day number, month, year), current weather and temperature. Add controls to be able to switch:
+/*Genereerimiseks kasutatud gpt-4o
+
+Create a HTML digital clock, which is able to display the current time, current date (day of the week, day number, month, year), current weather and temperature. Add controls to be able to switch:
     the timezone (location)
     Celsius to fahrenheit and vice versa
     font
@@ -9,7 +11,6 @@
     switch between 12- and 24 hour format
 Add the ability to drag the clock around with a mouse and resize the box.
 Also, generate a basic css design to accompany it. Use the Bulma framework.*/
-
 
 let currentWeatherData = {
         temperatureC: null,
