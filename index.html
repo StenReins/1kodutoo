@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Digital Clock with Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="clock.css" />
+    <script src="clock.js" defer></script>
+</head>
+
+<body class="light-mode">
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Digital Clock with Weather</h1>
+            <div class="box clock-container" id="draggable-clock">
+                <div id="time" class="time-display">--:--:--</div>
+                <div id="date" class="date-display">Loading date...</div>
+                <div id="resize-handle"></div>
+            </div>
+            <div class="box controls">
+                <div class="field is-grouped is-justify-content-center">
+                    <div class="control">
+                        <div class="select"> <select id="timezone-select">
+                                <option value="Europe/Tallinn" selected>Tallinn</option>
+                                <option value="America/New_York">New York</option>
+                                <option value="Europe/London">London</option>
+                                <option value="Asia/Tokyo">Tokyo</option>
+                                <option value="Australia/Sydney">Sydney</option>
+                            </select> </div>
+                    </div>
+                    <div class="control">
+                        <div class="select"> <select id="fontSelect">
+                                <option value="Arial" selected>Arial</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="Impact">Impact</option>
+                            </select> </div>
+                    </div>
+                    <div class="control">
+                        <div class="select"> <select id="fontSizeSelect">
+                                <option value="16px">16px</option>
+                                <option value="20px" selected>20px</option>
+                                <option value="24px">24px</option>
+                                <option value="32px">32px</option>
+                            </select> </div>
+                    </div>
+                    <div class="control"> <label for="fontColorPicker">Font Color:</label> <input id="fontColorPicker"
+                            type="color" value="#333333" style="margin-left: 0.5rem;"> </div>
+                    <div class="control"> <label for="bgColorPicker">Clock BG:</label> <input id="bgColorPicker"
+                            type="color" value="#f9f9f9" style="margin-left: 0.5rem;"> <input type="file" id="upload-bg"
+                            accept="image/*" /> </div>
+                    <div class="control"> <button class="button is-dark" id="darkModeBtn">Toggle Dark Mode</button>
+                    </div>
+                    <div class="control"> <button class="button is-warning" id="toggleFormatBtn">Switch to
+                            24-hour</button> </div>
+                </div>
+            </div>
+            <div class="control"> <button class="button is-info" id="toggle-temp-btn">Show °F</button> </div>
+            <div class="box weather-container">
+                <div id="weather" class="weather-info">Loading weather...</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Sten Reins, eesrakendused 2025</p>
+        <a href="https://github.com/StenReins/1kodutoo" target="_blank">Rakenduse repositoorium</a>
+    </footer>
+</body>
+</html>

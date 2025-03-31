@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    }
+    
+    h1.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    transition: color 0.5s;
+    }
+    
+    .box {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+    }
+    
+    .time-display {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s, font-size 0.3s;
+    }
+    
+    .date-display {
+    font-size: 1.2rem;
+    transition: color 0.3s, font-size 0.3s;
+    }
+    
+    .controls {
+    margin-top: 2rem;
+    text-align: center;
+    }
+    
+    button.button {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    button.button:hover {
+    filter: brightness(1.1);
+    }
+    
+    .weather-container {
+    margin-top: 2rem;
+    text-align: center;
+    }
+    
+    .weather-info {
+    font-size: 1rem;
+    transition: color 0.3s;
+    }
+    
+    .light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+    }
+    
+    .dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+    }
+    
+    #draggable-clock {
+    position: absolute;
+    cursor: move;
+    width: 300px;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+    }
+    
+    #resize-handle {
+    width: 10px;
+    height: 10px;
+    background: #999;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+    transition: background 0.3s;
+    }
+    
+    #resize-handle:hover {
+    background: #666;
+    }
+    
+    #upload-bg {
+    margin-left: 0.5rem;
+    }
+    
+    .field .control label {
+    margin-right: 0.5rem;
+    font-weight: 600;
+    }
+    
+    .select select {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    select:hover {
+    filter: brightness(1.08);
+    }
+    
+    button:hover {
+    cursor: pointer;
+    }
+    
+    button:active {
+    transform: scale(0.96);
+    }
