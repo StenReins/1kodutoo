@@ -1,11 +1,11 @@
 # 1-kodutoo
 Sten Reins
 
-## Pilt rakendusest##
+## Pilt rakendusest
 
 ![pilt rakendusest](rakendus.png)
 
-## Funktsioonid##
+## Funktsioonid
 
 Rakendus võimaldab kasutajal:
 1. vahetada ajatsooni (hetkel valikus viis tükki)
